@@ -1,0 +1,13 @@
+{
+	"scripts": {
+		"start": "node src/index.js",
+		"start:dev": "nodemon src/index.js",
+		"seeding": "node src/seeds/userSeed.js"
+	},
+	"dependencies": {
+		"cors": "^2.8.6",
+		"express": "^5.2.1",
+		"node-adodb": "^5.0.3",
+		"sqlite3": "^5.1.7"
+	}
+}
