@@ -2,7 +2,11 @@
 	"scripts": {
 		"start": "node src/index.js",
 		"start:dev": "nodemon src/index.js",
-		"seeding": "node src/seeds/userSeed.js"
+		"seeding": "node src/seeds/userSeed.js",
+		"build": "npm run clean && npm run copy-files && npm run compile",
+		"clean": "rimraf dist",
+		"compile": "babel src --out-dir dist --copy-files",
+		"copy-files": "copyfiles -u 1 src/**/*.html src/**/*.css src/**/*.json src/**/*.ejs src/**/*.pug dist/"
 	},
 	"dependencies": {
 		"cors": "^2.8.6",
