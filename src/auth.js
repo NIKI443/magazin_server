@@ -1,5 +1,5 @@
 import express from 'express'
-import ADODB from 'node-adodb'
+import ADODB from 'sqlite3'
 const router = express.Router()
 
 // Отключение расширенных свойств для упрощения запросов
