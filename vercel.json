@@ -10,10 +10,7 @@
 		{
 			"src": "/(.*)",
 			"dest": "/"
-		},
-		{
-			"src": "/arn1::qqtbl-1769768812368-b4501b5338ca",
-			"dest": "/your-handled-endpoint"
 		}
+		
 	]
 }
