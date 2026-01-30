@@ -20,3 +20,5 @@ app.use('/auth', auth)
 app.listen(port, () => {
 	console.log(`Сервер запущен на http://localhost:${port}`)
 })
+
+module.exports = app
